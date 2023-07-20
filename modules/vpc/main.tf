@@ -6,7 +6,3 @@ resource "aws_vpc" "main" {
     Name = "MainVPC"
   }
 }
-
-output "vpc_id" {
-  value = aws_vpc.main.id
-}

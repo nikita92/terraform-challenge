@@ -16,7 +16,3 @@ resource "aws_instance" "ec2_instance" {
 
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 }
-
-output "ec2_instance_ip" {
-  value = aws_instance.ec2_instance.public_ip
-}
